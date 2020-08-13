@@ -1,0 +1,41 @@
+#cover {
+  svg {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  path {
+    stroke-width: 3px;
+    // stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke: $redwine;
+    animation: draw 5s linear infinite;
+  }
+}
+
+#reveal-cover-shapeblue,
+#reveal-cover-shapered,
+#reveal-cover-shapegreen,
+#reveal-cover-shapeyellow,
+#reveal-cover-logo {
+  opacity:0;
+}
+
+#page-break {
+  padding: 0;
+}
+
+#objetivo {
+  .title-alike {
+    font-weight: bold;
+    font-style: italic;
+    color: $red;
+    padding: 1em 0;
+  }
+}

@@ -1,0 +1,44 @@
+#cultura-ebd {
+  .cultura-ebd-images {
+    // Each text image
+    .cultura-ebd-left-item {
+      width: 100%;
+      height: auto;
+      float: left;
+      position: absolute;
+      left: 0;
+      &:first-of-type {
+        top:0;
+      }
+      &:nth-of-type(2) {
+        top: 300px;
+      }
+      &:nth-of-type(3) {
+        top: 540px;
+      }
+      &:nth-of-type(4) {
+        bottom: 0;
+      }
+      // &:first-of-type {
+      //   padding-top: 1.5cm;
+      // }
+    }
+    // shape on the right
+    // .cultura-ebd-right-item {
+    //   width: auto;
+    //   height: 100%;
+    //   padding: 4cm 0 2cm;
+    //   position: absolute;
+    //   top: 0;
+    //   right: 2cm;
+    // }
+    .cultura-ebd-right-item {
+      width: auto;
+      height: 100%;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}

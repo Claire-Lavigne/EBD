@@ -1,0 +1,73 @@
+.h2-ebook, .h3-ebook, .h4-ebook {
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+
+.h2-ebook {
+  font-size: 3em;
+  margin: 0 0 0.5em;
+  font-style: italic;
+  font-weight: bold;
+}
+.h3-ebook {
+  font-size: 2em;
+}
+.h4-ebook {
+  font-size: 1rem;
+}
+
+//  NEW TYPO
+.h1-ebd, .h2-ebd {
+  font-size: 3em;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1em;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.h2-ebd {
+  letter-spacing: -1px;
+  font-size: 2.7em;
+  margin-bottom: 0;
+}
+
+#programa-de-desenvolvimento,
+#direcionamentos {
+  .h2-ebd {
+    letter-spacing: 3px;
+    font-size: 3.1em;
+  }
+}
+
+.h3-ebd {
+  font-size: 3em;
+  // font-size: 3.5em;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  span {
+    color: $red;
+  }
+}
+
+.h4-ebd {
+  color: $red;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 0.5em 0;
+  margin-bottom: 0;
+  span {
+    font-style: normal;
+    float: right;
+  }
+}

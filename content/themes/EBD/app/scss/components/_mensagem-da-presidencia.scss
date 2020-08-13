@@ -1,0 +1,22 @@
+#mensagem-da-presidencia {
+  border-bottom: 1px solid $red;;
+  .h3-ebd {
+    font-size: 3.5em;
+    span {
+      letter-spacing: 0.1em;
+    }
+  }
+  img {
+    position: absolute;
+    top: 5em;
+    right: 10em;
+    width: auto;
+    height: 150px;
+  }
+  .ebook-text {
+    margin: 20px auto;
+  }
+  p {
+    padding-bottom: 1em;
+  }
+}

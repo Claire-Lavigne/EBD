@@ -1,0 +1,89 @@
+#modalQuesitos {
+  .modal-body {
+    min-height: 500px;
+  }
+}
+
+.modalQuesitos {
+  text-align: justify;
+  .modal-dialog {
+    max-width: 900px;
+    margin: 2cm auto;
+  }
+  .modal-content {
+    @include computers {
+      width: 900px !important;
+    }
+  }
+  .close {
+    z-index: 5;
+    position: absolute;
+    right: 1cm;
+    top: 1em;
+    &:hover {
+      background: none;
+    }
+  }
+  .modal-header,
+  .modal-footer {
+    border: none;
+  }
+  .modal-header {
+    margin-bottom: 2cm;
+    .shape-top {
+      width: 98%;
+      padding: 2em 1px;
+      z-index: 0;
+    }
+  }
+  .modal-footer {
+    .shape-bottom {
+      z-index: 0;
+      padding: 2em 1px 0.5px;
+    }
+  }
+  .modal-body {
+    padding: 0 1cm 2cm;
+    font-style: italic;
+  }
+  .modal-title,
+  .modal-subtitle {
+    text-align: left;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 2em 0 0.5em;
+  }
+  .modal-title {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 2em 0 1em;
+  }
+  .modal-text {
+    font-size: 1em;
+    margin: 0;
+    + .modal-text {
+      margin-top: 2em;
+    }
+  }
+}
+
+@include small-mobiles {
+  .modal-dialog {
+    max-width: 90vw;
+  }
+  .modal-body {
+    padding: 0 1cm 2cm;
+  }
+}
+@include mobiles {
+}
+@include tablets {
+  .modal-dialog {
+    max-width: 700px;
+    margin: 2cm auto;
+  }
+  .modal-body {
+    padding: 0 2cm 2cm;
+    font-style: italic;
+  }
+}

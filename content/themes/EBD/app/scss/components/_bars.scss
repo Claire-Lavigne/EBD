@@ -1,0 +1,41 @@
+.ebd-bar {
+  color: $white;
+  padding-left: 1em;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  border-radius: 0 20px 20px 0;
+  position: relative;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 0.5em;
+  span {
+    position: absolute;
+    right: 20px;
+  }
+}
+.bar-grey {
+  background-color: $darkgrey;
+  width: 80%;
+  margin: 1em 0;
+}
+.bar-blue {
+  background-color: $blue;
+}
+.bar-red {
+  background-color: $red;
+}
+.bar-yellow {
+  background-color: $yellow;
+}
+.bar-green {
+  background-color: $green;
+}
+.bar-small {
+  font-style: italic;
+  padding: 1em 0;
+  padding-left: 1em;
+  width: 50%;
+}

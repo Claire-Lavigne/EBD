@@ -1,0 +1,40 @@
+#merito-destaque-ano,
+#merito-destaque-promissao {
+  .destaque {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .destaque-item {
+    margin: 1em 0;
+    width: 45%;
+  }
+  img {
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  p {
+    color: $black;
+    padding: 0.5em 0;
+    text-align: justify;
+  }
+}
+
+#merito-destaque-promissao {
+  .destaque {
+    margin: 0;
+    align-items: center;
+  }
+  img {
+    margin: 1em auto 0;
+    height: 450px;
+    width: auto;
+  }
+  p {
+    padding-top: 2em;
+  }
+}
+
+ 

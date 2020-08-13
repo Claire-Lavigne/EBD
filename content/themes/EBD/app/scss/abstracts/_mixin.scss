@@ -1,0 +1,94 @@
+/* Impression réelle */
+@media print {
+  body {
+    display: none;
+  }
+}
+
+// @media print {
+//   html,
+//   body {
+//     width: 210mm !important;
+//     height: 297mm !important;
+//     margin: 0 !important;
+//   }
+//   .ebook-page {
+//     width: 210mm !important;
+//     height: 297mm !important;
+//     margin: 2cm !important;
+//     padding: 2cm !important;
+//     break-after: always !important; //page
+//     break-before: always !important;
+//     break-inside: avoid;
+//   }
+//   .indice-right,
+//   #indiceBtn {
+//     display: none;
+//   }
+// }
+
+// MEDIA QUERIES
+
+// mobiles portrait (320*480)
+@mixin small-mobiles {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+// mobiles landscape (480*320)
+@mixin mobiles {
+  @media (min-width: 480px) {
+    @content;
+  }
+}
+// tablets portrait + landscape
+@mixin tablets {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+// laptops and desktops (1024*768)
+@mixin computers {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+// Resolution screens
+// 720*576
+@mixin SD {
+  @media (min-width: 720px) {
+    @content;
+  }
+}
+
+// 720p (1280*720)
+@mixin HD {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+// 1080p (1920*1080)
+@mixin FullHD {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}
+// 2K (2560*1440)
+@mixin TwoK {
+  @media (min-width: 2560px) {
+    @content;
+  }
+}
+// UltraHD (3840*2160)
+@mixin UltraHD {
+  @media (min-width: 3840px) {
+    @content;
+  }
+}
+// 4K (4096*2160)
+@mixin FourK {
+  @media (min-width: 4096px) {
+    @content;
+  }
+}

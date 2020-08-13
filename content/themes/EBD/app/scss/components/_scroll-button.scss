@@ -1,0 +1,19 @@
+#indiceBtn {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 3%;
+  z-index: 100;
+  border: none;
+  outline: none;
+  color: $red;
+  cursor: pointer;
+  margin: 1em;
+  background: $bgd-color;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 2em;
+  &:hover {
+    color: $black;
+  }
+}

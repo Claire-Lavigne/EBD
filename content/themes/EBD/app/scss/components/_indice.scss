@@ -1,0 +1,183 @@
+#indice,
+#indice-quesitos {
+  text-align: left;
+  padding: 3cm;
+  // margin: 0 auto;
+  .h2-ebook {
+    padding: 0;
+    margin: 0;
+    &:nth-of-type(2) {
+      padding: 1cm 0;
+    }
+  }
+  .nav-title,
+  .introduction {
+    padding: 0.6em 0 0.1em;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .introduction {
+    padding-top: 1.5em;
+  }
+  .nav-title {
+    cursor: default;
+  }
+  .nav-subtitle {
+    padding: 0;
+    font-weight: normal;
+    font-size: 1.2em;
+    &:hover {
+      color: $red;
+    }
+  }
+  .nav-title,
+  .nav-subtitle {
+    color: $black;
+    display: block;
+  }
+  .indice-number {
+    position: absolute;
+    right: 3cm;
+    z-index: 50;
+  }
+}
+
+.indice-competencias {
+  img {
+    cursor: pointer;
+    width: 13%;
+    margin-right: 2.2cm;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+#indice-quesitos {
+  padding: 2cm 3cm;
+  .h2-ebook {
+    font-size: 2.2em;
+    margin: 0 auto 1em;
+  }
+  .indice-quesitos-bloc {
+    padding: 1em 0;
+    padding-left: 1.5cm;
+  }
+  .indice-competencias-img {
+    position: absolute;
+    left: 1.5cm;
+    top: 160px;
+    width: 90px;
+    height: 90px;
+  }
+  .loremipsum-bloc {
+    border-left: 1px solid;
+    height: auto;
+    &-adm {
+      border-color: $blue;
+      a {
+        display: block;
+        color: $black;
+        font-weight: normal;
+        padding-left: 1.5em;
+        line-height: 1.5em;
+      }
+      a:hover {
+        color: $blue;
+      }
+    }
+    &-com {
+      border-color: $red;
+      a {
+        display: block;
+        color: $black;
+        font-weight: normal;
+        padding-left: 1.5em;
+        line-height: 1.5em;
+      }
+      a:hover {
+        color: $red;
+      }
+    }
+    &-gg {
+      border-color: $yellow;
+      a {
+        display: block;
+        color: $black;
+        font-weight: normal;
+        padding-left: 1.5em;
+        line-height: 1.5em;
+      }
+      a:hover {
+        color: $yellow;
+      }
+    }
+    &-log {
+      border-color: $green;
+      a {
+        display: block;
+        color: $black;
+        font-weight: normal;
+        padding-left: 1.5em;
+        line-height: 1.5em;
+      }
+      a:hover {
+        color: $green;
+      }
+    }
+  }
+  .nav-title {
+    text-align: left;
+    padding: 0.5em;
+    letter-spacing: 0.05em;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .indice-number {
+    position: absolute;
+    right: 2cm;
+    z-index: 50;
+  }
+
+  .nav-adm {
+    color: $blue;
+  }
+  .nav-com {
+    color: $red;
+  }
+  .nav-gg {
+    color: $yellow;
+  }
+  .nav-log {
+    color: $green;
+  }
+}
+
+.indice-right {
+  z-index: 99;
+  display: block;
+  position: fixed;
+  zoom: reset;
+  top: 5%;
+  right: 3%;
+  width: 3em;
+  .btn {
+    color: black;
+    background: none;
+    &:hover,
+    &:active {
+      background: none;
+    }
+  }
+  &__item {
+    padding: 0.5em 0;
+    margin: auto;
+    img {
+      cursor: pointer;
+      width: 35px;
+      // width: 15%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import
+    'abstracts/variables',
+    'abstracts/mixin';
+
+@import 
+    "~bootstrap/scss/bootstrap";
+    
+@import
+    'base/animations',
+    'base/base',
+    'base/keyframes',
+    'base/typography';
+
+@import
+    'components/avaliacao',
+    'components/bars',
+    'components/cover',
+    'components/cultura-ebd',
+    'components/elegiveis',
+    'components/escola-de-lideranca',
+    'components/guardioes-do-programa',
+    'components/indice',
+    'components/mensagem-da-presidencia',
+    'components/merito-destaque',
+    'components/modal',
+    'components/pdca',
+    'components/pontuacao',
+    'components/quesitos-content',
+    'components/quesitos-cover',
+    'components/rectangle-grey',
+    'components/scroll-button';
+
+@import
+    'layout/logo-and-shapes',
+    'layout/vertical-center';
+
+@import
+    'shame';

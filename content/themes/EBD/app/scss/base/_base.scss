@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&display=swap');
+
+body {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font: 14px $body-font;
+  text-align: center;
+  background: $bgd-color;
+  scroll-behavior: smooth;
+  counter-reset: section;
+  height: 100vh;
+  * {
+    box-sizing: border-box;
+  }
+  .elementor {
+    background: $white;
+  }
+  .wrapperEBD {
+    transform-origin: top;
+    // transform-origin: top center; // creates text blur
+    // position: absolute;
+    margin: 0;
+    top: 0;
+    left: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+  
+.ebook-page {
+  width: 21cm; // 2480
+  height: 29.7cm; // 3508 
+  padding: 2cm;
+  margin: 0.5cm;
+  background: $white;
+  box-shadow: 0 4px 5px rgba(75, 75, 75, 0.2);
+  outline: 0;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  &::after {
+    color: $darkgrey;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    bottom: 1cm;
+    right: 2cm;
+    z-index: 50;
+    font-size: 1em;
+    counter-increment: section;
+    content: counter(section);
+  }
+  p {
+    margin: 0 auto;
+    padding: 2em auto;
+    text-align: justify;
+  }
+  li {
+    text-align: left;
+    padding: 0.2em 0;
+  }
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+      color: $red;
+      // background: none;
+    }
+  }
+  img {
+    width: 250px;
+    height: auto;
+  }
+  // OTHER TAGS
+  .span-ebook {
+    font-style: normal;
+    float: right;
+  }
+}
+
+.ebook-text {
+  min-width: 300px;
+  max-width: 700px;
+  line-height: 1.5em;
+  text-align: justify;
+  margin: 50px auto;
+  p {
+    padding: 0.5em auto;
+  }
+}

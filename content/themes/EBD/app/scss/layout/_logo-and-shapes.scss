@@ -1,0 +1,97 @@
+// Logo centered on covers
+#cover,
+#scd-cover,
+#definicoes-do-programa,
+#iniciativas,
+#programa-de-desenvolvimento,
+#metodologia-de-gestao,
+#direcionamentos,
+#last-cover {
+  .logo-center {
+    width: 70%;
+    margin: 1em auto;
+    &__umJeitoEbd {
+      margin: 1em 6em;
+    }
+  }
+}
+
+// Logo footer hidden
+#cover,
+#scd-cover,
+#indice,
+#indice-competencias,
+#page-break,
+#definicoes-do-programa,
+#iniciativas,
+#programa-de-desenvolvimento,
+#metodologia-de-gestao,
+#direcionamentos,
+#last-cover,
+.quesitos-cover {
+  &::after {
+    content: "";
+  }
+}
+
+// Shapes
+.ebook-page,
+.quesitos-cover,
+.modalQuesitos {
+  .shape-top {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .shape-bottom {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .shape-small {
+    width: 60%;
+  }
+  .shape-left {
+    left: 0;
+  }
+}
+
+// Image full page
+// #scd-cover
+#ebdv,
+#ebde,
+#lider,
+#execucao-basica {
+  .image-full {
+    width: 100%;
+  }
+}
+
+#page-break{
+  .image-full {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+#pontuacao {
+  .image-full {
+    width: 60%;
+    margin: 1em auto 0;
+  }
+}
+
+#planejamento,
+#pontuacao-extra {
+  .image-full {
+    width: 90%;
+    margin: 2em auto 0;
+  }
+}

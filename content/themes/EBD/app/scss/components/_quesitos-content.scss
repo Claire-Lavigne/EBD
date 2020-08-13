@@ -1,0 +1,172 @@
+.quesito-bar{
+    background-color:$blue;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.2em;
+    border-radius: 0 20px 20px 0;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    height: 34.19px;
+    opacity:0;
+    width:0;
+    span{
+        font-weight: bold;
+        float: left;
+        padding-left: 2em;
+    }
+    &__points{
+        font-weight: bold;
+        position: absolute;
+        right: 20px;
+    }
+}
+
+.quesitos-content {
+    padding-left: 0;
+    .quesito-name, 
+    .quesito-subtitle,
+    .quesito-text {
+        padding-left: 2cm;
+    }
+    .quesito-name, 
+    .quesito-subtitle {
+        color: $blue;
+        text-align: left;
+        font-size: 1.3em;
+        font-weight: bold;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    .quesito-name {
+        font-size: 2.5rem;
+    }
+    .quesito-subtitle {
+        margin: 0.3em 0;
+    }
+    .quesito-text{
+        margin: 0.3em;
+        margin-left: 1em;
+        text-align: justify;
+        &__margin{
+            margin: 1em;
+        }
+    }
+    .table{
+        width: 90%;
+        background-color: $grey;
+        margin: 10px 2cm;
+        padding: 0.5em;
+        &__description {
+            font-size: 0.9em;
+            font-weight: 300;
+            padding: 0 0.5em;
+            margin: 0 auto;
+            text-align: justify;
+        }
+        &__points{
+            color: $blue;
+            float: right;
+            font-weight: bold;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+    }
+    &::after {
+        color: $blue;
+    }
+    a {
+        color: $black !important;
+        &:hover {
+            color: $blue !important;
+        }
+    }
+}
+
+
+#quesito-adm-01 {
+  .shape-top {
+    width: 20%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.quesitos-content-gg {
+    .quesito-name, 
+    .quesito-subtitle,
+    .table__points {
+        color: $yellow;
+    }
+    .quesito-bar {
+        background-color: $yellow;
+    }
+    &::after {
+        color: $yellow;
+    }
+    a:hover {
+        color: $yellow !important;
+    }
+}
+
+.quesitos-content-com {
+    .quesito-name, 
+    .quesito-subtitle,
+    .table__points {
+        color: $red;
+    }
+    .quesito-bar {
+        background-color: $red;
+    }
+    &::after {
+        color: $red;
+    }
+    a:hover {
+        color: $red !important;
+    }
+}
+
+.quesitos-content-log {
+    .quesito-name, 
+    .quesito-subtitle,
+    .table__points {
+        color: $green;
+    }
+    .quesito-bar {
+        background-color: $green;
+    }
+    &::after {
+        color: $green;
+    }
+    a:hover {
+        color: $green !important;
+    }
+}
+
+.points-top-right {
+    position: absolute;
+    right: 0.3cm;
+    top: 0.3cm;
+    color: $blue;
+    font-size: 2.7em;
+    font-style: italic;
+    font-weight: bold;
+    &--red {
+        color: $red;
+    }
+    &--yellow {
+        color: $yellow;
+    }
+    &--green {
+        color: $green;
+    }
+}

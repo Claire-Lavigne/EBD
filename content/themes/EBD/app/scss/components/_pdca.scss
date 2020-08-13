@@ -1,0 +1,50 @@
+#pdca {
+  .pdca-block {
+    width: 100%;
+    margin: 3em auto;
+    margin-left: -0.5cm;
+  }
+  .pdca-img {
+    margin: 0 auto;
+  }
+  .pdca-details {
+    &-item {
+      margin-right: 0.5cm;
+      margin-top: 70px;
+      // width: 240px;
+      width: auto;
+      position: absolute;
+      padding: 0.5em 1em;
+      text-align: left;
+      &:nth-child(n + 8) {
+        text-align: right;
+        margin-left: 0.5cm;
+      }
+    }
+  }
+  .table-grey {
+    margin: 2em 0;
+  }
+}
+
+#planejamento,
+#checagem,
+#conclusao {
+  .h4-ebook {
+    font-weight: bold;
+    margin: 2em 0 1em;
+  }
+  .quote-author {
+    width: 350px;
+    margin-left: 45%;
+    padding: 1em;
+    p {
+      text-align: right;
+      font-weight: bold;
+      text-transform: none;
+    }
+  }
+  .table-grey {
+    margin: 2em 0;
+  }
+}
